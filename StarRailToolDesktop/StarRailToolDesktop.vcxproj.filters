@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Helper">
+      <UniqueIdentifier>{21acd272-23d9-43e2-97cc-66ca5b92d4af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Helper\Kernels">
+      <UniqueIdentifier>{315ff52f-f708-4d83-95d9-4e018fe637f7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="StarRailToolDesktop.h">
+      <Filter>Source Files</Filter>
+    </QtMoc>
+    <QtMoc Include="src\Helper\FramelessHelper\Kernels\NativeWindowHelper.h">
+      <Filter>Source Files\Helper\Kernels</Filter>
+    </QtMoc>
+    <QtMoc Include="src\Helper\FramelessHelper\FramelessHelper.h">
+      <Filter>Source Files\Helper</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StarRailToolDesktop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Helper\FramelessHelper\Kernels\NativeWindowFilter.cpp">
+      <Filter>Source Files\Helper\Kernels</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Helper\FramelessHelper\Kernels\NativeWindowHelper.cpp">
+      <Filter>Source Files\Helper\Kernels</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Helper\FramelessHelper\FramelessHelper.cpp">
+      <Filter>Source Files\Helper</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="forms\MainWindow.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="StarRailToolDesktop.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Helper\FramelessHelper\Kernels\NativeWindowFilter.h">
+      <Filter>Source Files\Helper\Kernels</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Helper\FramelessHelper\Kernels\NativeWindowFilter_p.h">
+      <Filter>Source Files\Helper\Kernels</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Helper\FramelessHelper\Kernels\NativeWindowHelper_p.h">
+      <Filter>Source Files\Helper\Kernels</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Helper\FramelessHelper\FramelessHelper_p.h">
+      <Filter>Source Files\Helper</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
