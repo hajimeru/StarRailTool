@@ -60,7 +60,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>./src/Helper/FramelessHelper;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>./src/Helper/FramelessHelper;./src/;./src/Forms;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
@@ -79,29 +79,35 @@
     <ClCompile>
       <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <DebugInformationFormat>None</DebugInformationFormat>
-      <Optimization>MaxSpeed</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
-      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <QtMoc Include="StarRailToolDesktop.h" />
+    <ClCompile Include="src\Forms\StarRailToolDesktop.cpp" />
+    <ClCompile Include="src\Forms\WishPage.cpp" />
+    <ClCompile Include="src\Forms\WishPageQueryTemplate.cpp" />
     <ClCompile Include="src\Helper\FramelessHelper\FramelessHelper.cpp" />
     <ClCompile Include="src\Helper\FramelessHelper\Kernels\NativeWindowFilter.cpp" />
     <ClCompile Include="src\Helper\FramelessHelper\Kernels\NativeWindowHelper.cpp" />
-    <ClCompile Include="StarRailToolDesktop.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="forms\MainWindow.ui" />
+    <QtUic Include="forms\WishPage.ui" />
+    <QtUic Include="forms\WishPageQueryTemplate.ui" />
   </ItemGroup>
   <ItemGroup>
     <QtRcc Include="StarRailToolDesktop.qrc" />
   </ItemGroup>
   <ItemGroup>
+    <QtMoc Include="src\Forms\StarRailToolDesktop.h" />
+    <QtMoc Include="src\Forms\WishPage.h" />
+    <QtMoc Include="src\Forms\WishPageQueryTemplate.h" />
     <ClInclude Include="src\Helper\FramelessHelper\FramelessHelper_p.h" />
     <QtMoc Include="src\Helper\FramelessHelper\FramelessHelper.h" />
     <ClInclude Include="src\Helper\FramelessHelper\Kernels\NativeWindowFilter.h" />

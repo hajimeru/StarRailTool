@@ -20,40 +20,67 @@
     <Filter Include="Source Files\Helper">
       <UniqueIdentifier>{21acd272-23d9-43e2-97cc-66ca5b92d4af}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Helper\Kernels">
+    <Filter Include="Source Files\Helper\FrameLessHelper">
+      <UniqueIdentifier>{8b4e02db-bebc-4136-9a4c-9fe2d3e2eeb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Helper\FrameLessHelper\Kernels">
       <UniqueIdentifier>{315ff52f-f708-4d83-95d9-4e018fe637f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Forms">
+      <UniqueIdentifier>{cdef2728-ad9b-41e6-b8ef-f199aa1ca3c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Model">
+      <UniqueIdentifier>{e1922c22-1da2-4a73-b772-df98555c81d2}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <QtMoc Include="StarRailToolDesktop.h">
-      <Filter>Source Files</Filter>
-    </QtMoc>
     <QtMoc Include="src\Helper\FramelessHelper\Kernels\NativeWindowHelper.h">
-      <Filter>Source Files\Helper\Kernels</Filter>
+      <Filter>Source Files\Helper\FrameLessHelper\Kernels</Filter>
     </QtMoc>
     <QtMoc Include="src\Helper\FramelessHelper\FramelessHelper.h">
-      <Filter>Source Files\Helper</Filter>
+      <Filter>Source Files\Helper\FrameLessHelper</Filter>
+    </QtMoc>
+    <QtMoc Include="src\Forms\StarRailToolDesktop.h">
+      <Filter>Source Files\Forms</Filter>
+    </QtMoc>
+    <QtMoc Include="src\Forms\WishPage.h">
+      <Filter>Source Files\Forms</Filter>
+    </QtMoc>
+    <QtMoc Include="src\Forms\WishPageQueryTemplate.h">
+      <Filter>Source Files\Forms</Filter>
     </QtMoc>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="StarRailToolDesktop.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\Helper\FramelessHelper\Kernels\NativeWindowFilter.cpp">
-      <Filter>Source Files\Helper\Kernels</Filter>
+      <Filter>Source Files\Helper\FrameLessHelper\Kernels</Filter>
     </ClCompile>
     <ClCompile Include="src\Helper\FramelessHelper\Kernels\NativeWindowHelper.cpp">
-      <Filter>Source Files\Helper\Kernels</Filter>
+      <Filter>Source Files\Helper\FrameLessHelper\Kernels</Filter>
     </ClCompile>
     <ClCompile Include="src\Helper\FramelessHelper\FramelessHelper.cpp">
-      <Filter>Source Files\Helper</Filter>
+      <Filter>Source Files\Helper\FrameLessHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Forms\StarRailToolDesktop.cpp">
+      <Filter>Source Files\Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Forms\WishPage.cpp">
+      <Filter>Source Files\Forms</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Forms\WishPageQueryTemplate.cpp">
+      <Filter>Source Files\Forms</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="forms\MainWindow.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="forms\WishPage.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="forms\WishPageQueryTemplate.ui">
       <Filter>Form Files</Filter>
     </QtUic>
   </ItemGroup>
@@ -64,16 +91,16 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Helper\FramelessHelper\Kernels\NativeWindowFilter.h">
-      <Filter>Source Files\Helper\Kernels</Filter>
+      <Filter>Source Files\Helper\FrameLessHelper\Kernels</Filter>
     </ClInclude>
     <ClInclude Include="src\Helper\FramelessHelper\Kernels\NativeWindowFilter_p.h">
-      <Filter>Source Files\Helper\Kernels</Filter>
+      <Filter>Source Files\Helper\FrameLessHelper\Kernels</Filter>
     </ClInclude>
     <ClInclude Include="src\Helper\FramelessHelper\Kernels\NativeWindowHelper_p.h">
-      <Filter>Source Files\Helper\Kernels</Filter>
+      <Filter>Source Files\Helper\FrameLessHelper\Kernels</Filter>
     </ClInclude>
     <ClInclude Include="src\Helper\FramelessHelper\FramelessHelper_p.h">
-      <Filter>Source Files\Helper</Filter>
+      <Filter>Source Files\Helper\FrameLessHelper</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

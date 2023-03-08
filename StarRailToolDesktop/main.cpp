@@ -1,4 +1,5 @@
 #include "StarRailToolDesktop.h"
+
 #include <QtWidgets/QApplication>
 #include <qnamespace.h>
 
