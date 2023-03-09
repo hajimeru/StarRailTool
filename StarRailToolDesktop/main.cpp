@@ -1,9 +1,7 @@
-#include "StarRailToolDesktop.h"
+ï»¿#include "StarRailToolDesktop.h"
 
 #include <QtWidgets/QApplication>
 #include <qnamespace.h>
-
-#include "CTest.h"
 
 int main(int argc, char *argv[])
 {
@@ -12,10 +10,6 @@ int main(int argc, char *argv[])
 
     StarRailToolDesktop w;
     w.show();
-
-    CTest test;
-    QTEST_SET_MAIN_SOURCE_PATH;
-    qDebug() << QTest::qExec(&test, argc, argv);   //Ö´ÐÐtestÀàÖÐµÄ²âÊÔÓÃÀý  È«²¿³É¹¦·µ»Ø0  ÓÐÊ§°Ü·µ»Ø·Ç0
 
     return a.exec();
 }

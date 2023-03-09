@@ -1,4 +1,4 @@
-#include "NativeWindowHelper.h"
+﻿#include "NativeWindowHelper.h"
 #include "NativeWindowHelper_p.h"
 
 #include <windows.h>

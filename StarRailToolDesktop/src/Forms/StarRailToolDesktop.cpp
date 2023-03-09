@@ -43,6 +43,10 @@ StarRailToolDesktop::StarRailToolDesktop(QWidget *parent)
 
     ui.maximizeButton->setIcon(QIcon(QStringLiteral(":/asset/icon/maximize-button1.png")));
     QTimer::singleShot(100, this, &StarRailToolDesktop::syncPosition);
+
+
+
+
 }
 
 StarRailToolDesktop::~StarRailToolDesktop()

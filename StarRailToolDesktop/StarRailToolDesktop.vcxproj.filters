@@ -32,8 +32,11 @@
     <Filter Include="Source Files\Model">
       <UniqueIdentifier>{e1922c22-1da2-4a73-b772-df98555c81d2}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Tests">
-      <UniqueIdentifier>{98abcdbf-7139-4f78-89d2-f7b8bfc12ef7}</UniqueIdentifier>
+    <Filter Include="Source Files\HttpDataParser">
+      <UniqueIdentifier>{412dec10-47b4-4a12-95b3-94805e107839}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Helper\HttpHelper">
+      <UniqueIdentifier>{ca5c5f4b-9e21-474c-8898-1d4fde1ffbcc}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -52,8 +55,8 @@
     <QtMoc Include="src\Forms\WishPageQueryTemplate.h">
       <Filter>Source Files\Forms</Filter>
     </QtMoc>
-    <QtMoc Include="src\Test\CTest.h">
-      <Filter>Source Files\Tests</Filter>
+    <QtMoc Include="src\Helper\HttpClient.h">
+      <Filter>Source Files\Helper\HttpHelper</Filter>
     </QtMoc>
   </ItemGroup>
   <ItemGroup>
@@ -78,9 +81,7 @@
     <ClCompile Include="src\Forms\WishPageQueryTemplate.cpp">
       <Filter>Source Files\Forms</Filter>
     </ClCompile>
-    <ClCompile Include="src\Test\CTest.cpp">
-      <Filter>Source Files\Tests</Filter>
-    </ClCompile>
+    <ClCompile Include="WishDataModel.cpp" />
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="forms\MainWindow.ui">
@@ -111,7 +112,10 @@
     <ClInclude Include="src\Helper\FramelessHelper\FramelessHelper_p.h">
       <Filter>Source Files\Helper\FrameLessHelper</Filter>
     </ClInclude>
-    <ClInclude Include="src\Model\WishDataHttpReturnValue.h">
+    <ClInclude Include="src\Model\WishDataHttpParser.h">
+      <Filter>Source Files\HttpDataParser</Filter>
+    </ClInclude>
+    <ClInclude Include="WishDataModel.h">
       <Filter>Source Files\Model</Filter>
     </ClInclude>
   </ItemGroup>

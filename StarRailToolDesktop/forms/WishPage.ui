@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>598</width>
-    <height>370</height>
+    <width>597</width>
+    <height>434</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -56,6 +56,35 @@
         </size>
        </property>
       </spacer>
+     </item>
+     <item>
+      <widget class="QTextEdit" name="urlTextEdit">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>24</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="showWishDataButton">
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+  font-family:&quot;HarmonyOS Sans SC&quot;;
+  color : #666666
+}</string>
+       </property>
+       <property name="text">
+        <string>获取祈愿信息</string>
+       </property>
+      </widget>
      </item>
     </layout>
    </item>
@@ -148,8 +177,8 @@ QScrollBar::down-arrow:vertical {
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>596</width>
-        <height>346</height>
+        <width>595</width>
+        <height>406</height>
        </rect>
       </property>
      </widget>

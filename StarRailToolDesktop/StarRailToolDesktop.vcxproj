@@ -37,7 +37,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
     <QtInstall>5.14.2_msvc2017_64</QtInstall>
-    <QtModules>core;gui;testlib;widgets;winextras</QtModules>
+    <QtModules>core;network;gui;testlib;widgets;winextras</QtModules>
     <QtBuildConfig>release</QtBuildConfig>
   </PropertyGroup>
   <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
@@ -60,7 +60,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>./src/Helper/FramelessHelper;./src/;./src/Forms;./src/Model;./src/3rdLibrary;./src/Test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>./src/;./src/Helper/FramelessHelper;./src/Helper;./src/Forms;./src/Model;./src/3rdLibrary;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
@@ -95,7 +95,6 @@
     <ClCompile Include="src\Helper\FramelessHelper\Kernels\NativeWindowFilter.cpp" />
     <ClCompile Include="src\Helper\FramelessHelper\Kernels\NativeWindowHelper.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="src\Test\CTest.cpp" />
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="forms\MainWindow.ui" />
@@ -106,8 +105,9 @@
     <QtRcc Include="StarRailToolDesktop.qrc" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Model\WishDataHttpReturnValue.h" />
-    <QtMoc Include="src\Test\CTest.h" />
+    <ClInclude Include="WishQueryDataModel.h" />
+    <QtMoc Include="src\Helper\HttpClient.h" />
+    <ClInclude Include="src\Model\WishDataHttpParser.h" />
     <QtMoc Include="src\Forms\StarRailToolDesktop.h" />
     <QtMoc Include="src\Forms\WishPage.h" />
     <QtMoc Include="src\Forms\WishPageQueryTemplate.h" />

@@ -41,7 +41,7 @@
       <number>0</number>
      </property>
      <item row="0" column="0">
-      <widget class="QLabel" name="label">
+      <widget class="QLabel" name="pool_title">
        <property name="styleSheet">
         <string notr="true"/>
        </property>
@@ -57,7 +57,7 @@
       </widget>
      </item>
      <item row="3" column="0">
-      <widget class="QLabel" name="label_6">
+      <widget class="QLabel" name="begintime">
        <property name="styleSheet">
         <string notr="true"/>
        </property>
@@ -73,7 +73,7 @@
       </widget>
      </item>
      <item row="4" column="0">
-      <widget class="QLabel" name="label_7">
+      <widget class="QLabel" name="endtime">
        <property name="styleSheet">
         <string notr="true"/>
        </property>
@@ -107,7 +107,7 @@
         </spacer>
        </item>
        <item row="1" column="1" rowspan="2">
-        <widget class="QLabel" name="label_3">
+        <widget class="QLabel" name="total_count">
          <property name="styleSheet">
           <string notr="true">QLabel{
 	font: 24pt;
@@ -193,14 +193,14 @@
         </spacer>
        </item>
        <item row="0" column="1">
-        <widget class="QLabel" name="label_25">
+        <widget class="QLabel" name="five_total">
          <property name="text">
           <string>6抽</string>
          </property>
         </widget>
        </item>
        <item row="1" column="1">
-        <widget class="QLabel" name="label_26">
+        <widget class="QLabel" name="four_total">
          <property name="text">
           <string>小保底内0抽</string>
          </property>
@@ -302,23 +302,7 @@
         </widget>
        </item>
        <item>
-        <spacer name="horizontalSpacer_16">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeType">
-          <enum>QSizePolicy::Fixed</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>8</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_31">
+        <widget class="QLabel" name="common_rank5avg">
          <property name="styleSheet">
           <string notr="true">QLabel{
 	color:#9966cc
@@ -370,22 +354,6 @@
         </widget>
        </item>
        <item>
-        <spacer name="horizontalSpacer_19">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeType">
-          <enum>QSizePolicy::Fixed</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>8</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item>
         <widget class="QLabel" name="label_18">
          <property name="styleSheet">
           <string notr="true">QLabel{
@@ -409,22 +377,6 @@
      <item row="4" column="2">
       <layout class="QHBoxLayout" name="horizontalLayout_3">
        <item>
-        <spacer name="horizontalSpacer_22">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeType">
-          <enum>QSizePolicy::Fixed</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>8</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item>
         <widget class="QLabel" name="label_20">
          <property name="styleSheet">
           <string notr="true"/>
@@ -439,22 +391,6 @@
           <bool>false</bool>
          </property>
         </widget>
-       </item>
-       <item>
-        <spacer name="horizontalSpacer_18">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeType">
-          <enum>QSizePolicy::Fixed</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>8</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
        </item>
        <item>
         <widget class="QLabel" name="label_19">
@@ -498,7 +434,7 @@
        <item row="1" column="1">
         <layout class="QGridLayout" name="gridLayout_2">
          <item row="0" column="0">
-          <widget class="QLabel" name="label_28">
+          <widget class="QLabel" name="rank5count">
            <property name="styleSheet">
             <string notr="true"/>
            </property>
@@ -514,7 +450,7 @@
           </widget>
          </item>
          <item row="1" column="0">
-          <widget class="QLabel" name="label_29">
+          <widget class="QLabel" name="rank4count">
            <property name="styleSheet">
             <string notr="true"/>
            </property>
@@ -530,7 +466,7 @@
           </widget>
          </item>
          <item row="2" column="0">
-          <widget class="QLabel" name="label_30">
+          <widget class="QLabel" name="rank3count">
            <property name="styleSheet">
             <string notr="true"/>
            </property>
@@ -566,7 +502,7 @@
        <item row="1" column="2">
         <layout class="QGridLayout" name="gridLayout_7">
          <item row="2" column="0">
-          <widget class="QLabel" name="label_14">
+          <widget class="QLabel" name="rank3ratio">
            <property name="styleSheet">
             <string notr="true"/>
            </property>
@@ -582,7 +518,7 @@
           </widget>
          </item>
          <item row="1" column="0">
-          <widget class="QLabel" name="label_13">
+          <widget class="QLabel" name="rank4ratio">
            <property name="styleSheet">
             <string notr="true"/>
            </property>
@@ -598,7 +534,7 @@
           </widget>
          </item>
          <item row="0" column="0">
-          <widget class="QLabel" name="label_12">
+          <widget class="QLabel" name="rank5ratio">
            <property name="styleSheet">
             <string notr="true"/>
            </property>
@@ -717,22 +653,6 @@
         </widget>
        </item>
        <item>
-        <spacer name="horizontalSpacer_20">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeType">
-          <enum>QSizePolicy::Fixed</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>8</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item>
         <widget class="QLabel" name="label_21">
          <property name="styleSheet">
           <string notr="true">QLabel{
@@ -756,22 +676,6 @@
      <item row="5" column="1" colspan="2">
       <layout class="QHBoxLayout" name="horizontalLayout_2">
        <item>
-        <spacer name="horizontalSpacer_23">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeType">
-          <enum>QSizePolicy::Fixed</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>8</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item>
         <widget class="QLabel" name="label_24">
          <property name="styleSheet">
           <string notr="true"/>
@@ -786,22 +690,6 @@
           <bool>false</bool>
          </property>
         </widget>
-       </item>
-       <item>
-        <spacer name="horizontalSpacer_21">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeType">
-          <enum>QSizePolicy::Fixed</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>8</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
        </item>
        <item>
         <widget class="QLabel" name="label_23">
@@ -856,23 +744,7 @@
         </widget>
        </item>
        <item>
-        <spacer name="horizontalSpacer_17">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeType">
-          <enum>QSizePolicy::Fixed</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>8</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item>
-        <widget class="QLabel" name="label_32">
+        <widget class="QLabel" name="up_rank5avg">
          <property name="styleSheet">
           <string notr="true">QLabel{
 	color:#9966cc

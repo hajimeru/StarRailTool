@@ -2,7 +2,6 @@
 
 #include <QWidget>
 #include "ui_MainWindow.h"
-
 class StarRailToolDesktop : public QWidget
 {
     Q_OBJECT
